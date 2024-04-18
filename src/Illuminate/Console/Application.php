@@ -67,6 +67,7 @@ class Application extends SymfonyApplication implements ApplicationContract
     {
         parent::__construct('Laravel Framework', $version);
 
+        $this->setDefaultCommand('_default');
         $this->laravel = $laravel;
         $this->events = $events;
         $this->setAutoExit(false);
